@@ -3,33 +3,22 @@ The Finger Joint Card Scanning Attendance System is designed to automate attenda
 
 ## Arduino Code for Card Scanning
 # Hardware Setup
-**Components:**
-- Arduino Uno or compatible board
-- RFID reader module (e.g., MFRC522)
+**Components**
+- ESP8266 microcontroller (e.g., NodeMCU)
+- HW-898-A v0.1 card scanner module
 - RFID cards or tags
 
-**Wiring:**
-- Connect the RFID reader module to the Arduino according to the manufacturer's specifications.
-- Ensure proper power and ground connections.
-- Connect the data pins (e.g., SDA, SCK, MOSI, MISO) from the RFID module to the corresponding pins on the Arduino.
+**Wiring**
+Connect the HW-898-A v0.1 card scanner module to the ESP8266 as follows:
 
-## Code Explanation
-**1. Libraries:**
-- Include the necessary libraries for interfacing with the RFID reader module and communicating with the Arduino.
+- HW-898-A v0.1 --> ESP8266
+- VCC --> 3.3V
+- GND --> GND
+- TX --> RX (GPIO pin specified in code)
+- RX --> TX (GPIO pin specified in code)
 
-**2. Define Pins:**
-- Define the pins used for communication with the RFID module.
+*Ensure proper power and ground connections between the components.*
 
-**3. Initialize RFID Module:**
-- Initialize the RFID reader module and prepare it for reading cards.
-
-**4. Main Loop:**
-- Continuously check for RFID cards within the vicinity.
-- When a card is detected, read its unique identifier and store it for further processing.
-- Optionally, perform additional actions based on the scanned card (e.g., logging attendance, triggering events).
-
-**5. Functions:**
-- Define any helper functions needed for the main operation of the system.
 
 ## ERPNext Doctype Setup
 **Prerequisites**
