@@ -38,8 +38,8 @@ Connect the HW-898-A v0.1 card scanner module to the ESP8266 as follows:
 **3. Create a New Doctype:**
 - Click the "New" button to create a new doctype.
 - Fill in the following details:
-- - **Name:** Attendance Log
-- - **Module:** Choose the relevant module (e.g., HR or Custom).
+- - **Name:** *Corner Sample*
+- - **Module:** Choose any relevant module (e.g., HR or Custom).
 - - **Naming:** By "naming_series" field
 - Save the doctype.
 
@@ -78,10 +78,13 @@ Connect the HW-898-A v0.1 card scanner module to the ESP8266 as follows:
 ## Node-RED Flow
 **1. Import the Flow:**
 - Import the provided Node-RED flow file (e.g., FingerJointCardScanningAttendance.json) into your Node-RED instance.
+![image](https://github.com/ProdITdept/FJ-Scan/assets/168414219/4d201433-70d0-460d-b29f-d6e4a20d38d3)
+
 
 **2. Configure Nodes:**
 - Configure the nodes in the flow to interact with your Arduino device and ERPNext instance.
 - Ensure proper communication between the hardware (Arduino) and software (Node-RED).
+![image](https://github.com/ProdITdept/FJ-Scan/assets/168414219/24f48a8a-00fd-46ce-b8fc-52cac7113b25)
 
 **3. Test the Flow:**
 - Test the flow by simulating card scans and verifying that attendance logs are correctly recorded in ERPNext.
