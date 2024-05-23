@@ -77,7 +77,7 @@ Connect the HW-898-A v0.1 card scanner module to the ESP8266 as follows:
 
 ## Node-RED Flow
 **1. Import the Flow:**
-- Import the provided Node-RED flow file **(Corner.json)** into your Node-RED instance.
+- Import the provided Node-RED flow file **(Corner.json)** https://github.com/ProdITdept/FJ-Scan/blob/main/Corner.json into your Node-RED instance.
 ![image](https://github.com/ProdITdept/FJ-Scan/assets/168414219/4d201433-70d0-460d-b29f-d6e4a20d38d3)
 
 
